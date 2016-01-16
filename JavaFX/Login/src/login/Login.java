@@ -51,6 +51,12 @@ public class Login extends Application {
 
         //grid.setGridLinesVisible(true);
         
+        Button btn = new Button("Sign in");
+        HBox hbBtn = new HBox(10);
+        hbBtn.setAlignment(Pos.BOTTOM_RIGHT);
+        hbBtn.getChildren().add(btn);
+        grid.add(hbBtn, 1, 4);
+        
         Scene scene = new Scene(grid, 300, 275);
         primaryStage.setScene(scene);
         primaryStage.show();
