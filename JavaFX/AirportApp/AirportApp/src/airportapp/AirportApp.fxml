@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+
+
+<VBox prefHeight="456.0" prefWidth="658.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="airportapp.Controller">
+   <children>
+      <HBox alignment="CENTER_LEFT">
+         <children>
+            <Label text="Zoom" />
+            <Button mnemonicParsing="false" onAction="#zoomOut" text="-" />
+            <Slider />
+            <Button mnemonicParsing="false" onAction="#zoomIn" text="+" />
+            <Region HBox.hgrow="ALWAYS" />
+            <Label text="Visuals" />
+            <ToggleButton mnemonicParsing="false" onAction="#stylingContrast" text="Hi Contrast" />
+            <ToggleButton mnemonicParsing="false" onAction="#stylingSizing" text="Large UI" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+      </HBox>
+      <SplitPane dividerPositions="0.4013377926421405" VBox.vgrow="ALWAYS">
+         <items>
+            <ListView onMouseClicked="#listClicked" prefHeight="398.0" prefWidth="194.0" />
+            <ScrollPane prefHeight="200.0" prefWidth="200.0">
+               <content>
+                  <Pane>
+                     <children>
+                        <ImageView>
+                           <image>
+                              <Image url="@AirportApp/src/airportapp/map.jpg" />
+                           </image>
+                        </ImageView>
+                        <MenuButton layoutX="62.0" layoutY="188.0" mnemonicParsing="false" styleClass="map-pin" stylesheets="@AirportApp/src/airportapp/airportapp.css">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Action 1" />
+                          </items>
+                        </MenuButton>
+                     </children>
+                  </Pane>
+               </content>
+            </ScrollPane>
+         </items>
+      </SplitPane>
+   </children>
+</VBox>
