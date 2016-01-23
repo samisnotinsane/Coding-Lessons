@@ -1,0 +1,23 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'org.javafxports:jfxmobile-plugin:1.0.6'
+    }
+}
+
+apply plugin: 'org.javafxports.jfxmobile'
+
+repositories {
+    jcenter()
+}
+
+mainClassName = 'com.gluon.demo.GluonDemoApp'
+
+jfxmobile {
+    ios {
+        infoPList = file('src/ios/Default-Info.plist')
+    }
+}
+
