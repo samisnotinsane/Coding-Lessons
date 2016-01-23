@@ -6,11 +6,8 @@
 package simplepad;
 
 import javafx.application.Application;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
-import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.layout.StackPane;
+import javafx.geometry.Insets;
+import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
 /**
@@ -19,26 +16,19 @@ import javafx.stage.Stage;
  */
 public class SimplePad extends Application {
     
+    Stage window;
+    
     @Override
     public void start(Stage primaryStage) {
-        Button btn = new Button();
-        btn.setText("Say 'Hello World'");
-        btn.setOnAction(new EventHandler<ActionEvent>() {
-            
-            @Override
-            public void handle(ActionEvent event) {
-                System.out.println("Hello World!");
-            }
-        });
+        window = primaryStage;
+        window.setTitle("New Note - SimplePad");
         
-        StackPane root = new StackPane();
-        root.getChildren().add(btn);
+        //GridPane with 10px padding around edge
+        GridPane grid = new GridPane();
+        grid.setPadding(new Insets(10, 10, 10, 10));
+        grid.setVgap(8);
+        grid.setHgap(10);
         
-        Scene scene = new Scene(root, 300, 250);
-        
-        primaryStage.setTitle("Hello World!");
-        primaryStage.setScene(scene);
-        primaryStage.show();
     }
 
     /**
