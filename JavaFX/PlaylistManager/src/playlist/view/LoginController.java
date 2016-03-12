@@ -10,6 +10,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import playlist.Main;
 
 import java.io.IOException;
 
@@ -33,13 +34,7 @@ public class LoginController {
         String pwd = pwdLogin.getText();
 
         if(login.equals("sam@sam.com") && pwd.equals("root") ) {
-            // Get root node and place it in scene
-            Parent homeRoot = FXMLLoader.load(getClass().getResource("view/home.fxml"));
-            Scene homeScene = new Scene(homeRoot, 300, 200);
-            // now place scene on stage
-            Stage homeStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-            homeStage.setScene(homeScene);
-            homeStage.show();
+            Main.showHome(event);
         } else {
             lblAuthStatus.setText("Invalid username/password!");
         }
