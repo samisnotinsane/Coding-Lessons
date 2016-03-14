@@ -34,6 +34,7 @@ public class LoginController {
         String pwd = pwdLogin.getText();
 
         if(login.equals("sam@sam.com") && pwd.equals("root") ) {
+            System.out.println("Logging in");
             Main.showHome(event);
         } else {
             lblAuthStatus.setText("Invalid username/password!");
