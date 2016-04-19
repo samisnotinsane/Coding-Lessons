@@ -1,4 +1,4 @@
-package Server;
+package server;
 
 import java.net.*;
 import java.io.*;
@@ -30,13 +30,15 @@ class Server {
      * is returned.
      */
     public void startServer() {
-        System.out.println("Server started: " + Main.VERSION) ;
+        System.out.println("server started: " + Main.VERSION) ;
         try {
             ServerSocket s = new ServerSocket(port);
 
             // accept connections on this socket
             while (true) {
-                Socket temp = s.accept();
+                System.out.println("Server running...");
+                Socket temp = s.accept(); // blocks execution until a conn. is established
+                System.out.println("Request accepted...");
                 serveFile(temp) ;
             }
             // s.close() ;
@@ -45,6 +47,7 @@ class Server {
             System.out.println("Exception in server:1") ;
             System.out.println(e.toString()) ;
         }
+        System.out.println("Closing server...");
     }
 
     /**
@@ -61,11 +64,11 @@ class Server {
             // Create a reader on the socket and read the file name
             socket_reader = new BufferedReader(
                     new InputStreamReader(socket.getInputStream()));
-            String filename = socket_reader.readLine();
+            String filename = socket_reader.readLine(); // gets input from client
 
             // open the file and the printer writer
             freader = new BufferedReader(new FileReader(filename)) ;
-            System.out.println("Server: opened file name: " + filename) ;
+            System.out.println("server: opened file name: " + filename) ;
             pwriter = new PrintWriter(socket.getOutputStream(), true) ;
 
             // read from the file
@@ -73,10 +76,10 @@ class Server {
             String line = freader.readLine() ;
             while (line != null) {
                 pwriter.println(line) ;
-                // System.out.print(l + " ") ; l ++ ;
+                 System.out.print(l + " ") ; l ++ ;
                 line = freader.readLine() ;
             }
-            System.out.println("Server: Finished reading file " + filename);
+            System.out.println("server: Finished reading file " + filename);
             socket_reader.close();
             freader.close() ;
             pwriter.close() ;

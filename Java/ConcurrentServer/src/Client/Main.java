@@ -29,7 +29,7 @@ public class Main {
             try {
                 port = Integer.parseInt(args[1]) ;
             } catch (NumberFormatException e) {
-                System.out.println("ERROR: Server port number expected: " + args[1]) ;
+                System.out.println("ERROR: server port number expected: " + args[1]) ;
                 System.out.println(e.toString()) ;
                 System.exit(1) ;
             }
@@ -39,9 +39,9 @@ public class Main {
             Client c = new Client(ip, port, clientName) ;
             c.start() ;
         } else {
-            System.out.println("Client " + VERSION) ;
+            System.out.println("client " + VERSION) ;
             System.out.println("Three arguments expected: server ip, server port, client name") ;
-            System.out.println("Run the program as: java -jar Client.jar N.N.N.N portNum client_name") ;
+            System.out.println("Run the program as: java -jar client.jar N.N.N.N portNum client_name") ;
             System.exit(1) ;
         }
     }
@@ -58,7 +58,7 @@ public class Main {
             try {
                 return InetAddress.getByAddress(local);
             } catch (UnknownHostException ex) {
-                System.out.println("ERROR: Server IP local host address error") ;
+                System.out.println("ERROR: server IP local host address error") ;
                 System.out.println(ex.toString()) ;
                 System.exit(1) ;
             }
@@ -76,23 +76,23 @@ public class Main {
                     } else if (n>=128 && n < 255) {
                         b[i] = (byte) (n-256) ;
                     } else {
-                        System.out.println("ERROR: Server IP address range: "
+                        System.out.println("ERROR: server IP address range: "
                                 + bytes[i]) ;
                         System.exit(1) ;
                     }
                 }
                 return InetAddress.getByAddress(b);
             } catch (UnknownHostException ex) {
-                System.out.println("ERROR: Server IP address format error") ;
+                System.out.println("ERROR: server IP address format error") ;
                 System.out.println(ex.toString()) ;
                 System.exit(1) ;
             } catch (NumberFormatException e) {
-                System.out.println("ERROR: Server IP numbers expected") ;
+                System.out.println("ERROR: server IP numbers expected") ;
                 System.out.println(e.toString()) ;
                 System.exit(1) ;
             }
         } else {
-            System.out.println("ERROR: Server IP format must be N.N.N.N for numbers N") ;
+            System.out.println("ERROR: server IP format must be N.N.N.N for numbers N") ;
             System.exit(1) ;
         }
         return null ;

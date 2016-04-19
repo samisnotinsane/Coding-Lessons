@@ -1,12 +1,11 @@
 
-package Client;
+package client;
 
 import java.net.*;
 import java.io.*;
 
-
 /**
- * Class Client
+ * Class client
  *
  * Prompt the user to read the name of a file and request it from the
  * server. Continue until the user enters a blank string.
@@ -29,7 +28,7 @@ public class Client {
         String fname ;
         boolean finished = false ;
 
-        System.out.println(name + " is running. Client " + Main.VERSION) ;
+        System.out.println(name + " is running. client " + Main.VERSION) ;
         while (!finished) {
             fname = getFilename();
             if (fname != null && fname.length() > 0) {
@@ -78,6 +77,7 @@ public class Client {
         System.out.print("Enter the file name>") ;
         try {
             fname = b.readLine();
+            System.out.println("Looking for file: '"+fname+"'...");
         }
         catch (IOException e) {
             System.out.println(name + " error getting filename") ;

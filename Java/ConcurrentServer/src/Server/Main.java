@@ -1,4 +1,4 @@
-package Server;
+package server;
 
 /**
  * Simple server. Requests are answered in sequence.
@@ -28,9 +28,9 @@ public class Main {
                 System.exit(1) ;
             }
         } else {
-            System.out.println("Server " + VERSION) ;
+            System.out.println("server " + VERSION) ;
             System.out.println("One argument expected: server port") ;
-            System.out.println("Run the program as: java -jar Server.jar portNum") ;
+            System.out.println("Run the program as: java -jar server.jar portNum") ;
             System.exit(1) ;
         }
 
