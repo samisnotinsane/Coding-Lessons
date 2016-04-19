@@ -18,7 +18,7 @@ public class FindTheBiggest {
 		System.out.println("Largest camp is: "+
 										biggest.toString());
 
-		ArrayList<Camp> campList = new ArrayList<Camp>();
+		List<Camp> campList = new ArrayList<Camp>();
 		for(int i=0; i<campCollection.length; i++)
 		{
 			campList.add(campCollection[i]);
@@ -27,7 +27,7 @@ public class FindTheBiggest {
 		Camp triSector = new Camp("TriSector", 40);
 
 		
-		if(atLeast(campList, triSector, 1)) 
+		if(atLeastCollection(campList, triSector, 1)) 
 			System.out.println("Camps are available that are larger than TriSector");
 		else
 			System.out.println("Sorry, there are no camps larger than TriSector at the moment!");
@@ -59,5 +59,29 @@ public class FindTheBiggest {
 			return true;
 		else 
 			return false;
+	}
+
+	/********************************************************
+	 * Can handle ANY Collection type, not just an ArrayList*
+	 ********************************************************/
+	public static <E extends Comparable<? super E>> boolean 
+					atLeastCollection(Collection<E> ls, E obj, int n)
+	{
+		int count = 0;
+		
+		Iterator<E> it = ls.iterator();
+		try {
+			while(it.hasNext()) {
+				E element = it.next();
+				if((obj.compareTo(element) > 0))
+					count++;
+			}
+		} catch (NoSuchElementException e) {System.exit(-1);}
+		
+		if(count >= n)
+			return true;
+		else 
+			return false;
+		
 	}
 }
