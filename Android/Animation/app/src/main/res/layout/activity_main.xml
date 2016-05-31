@@ -14,6 +14,17 @@
         android:layout_height="match_parent"
         android:id="@+id/imgReese"
         android:layout_centerVertical="true"
-        android:src="@drawable/ReeseS4"
+        android:src="@drawable/reese"
+        android:onClick="fade" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imgFinch"
+        android:layout_alignTop="@+id/imgReese"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/emerson"
+        android:alpha="0.4"
         android:onClick="fade" />
 </RelativeLayout>
