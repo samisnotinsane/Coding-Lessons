@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         sexesPointer= 0;
     }
 
-    public void onClickNextBtn(View view) {
+    public void onClickNextBtn(View view) throws Exception {
         Log.d(TAG, "Next button tapped.");
 
         // move pointers forward
@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void onClickPrevBtn(View view) {
+    public void onClickPrevBtn(View view) throws Exception {
         Log.d(TAG, "Previous button tapped.");
     }
 
