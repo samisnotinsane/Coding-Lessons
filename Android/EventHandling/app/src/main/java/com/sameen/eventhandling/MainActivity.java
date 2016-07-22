@@ -3,6 +3,7 @@ package com.sameen.eventhandling;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
@@ -12,6 +13,8 @@ public class MainActivity extends AppCompatActivity {
 
     private Button redButton;
     private TextView appTitle, eventMsg;
+
+    private final String TAG = "sameensapp";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
                 new Button.OnClickListener() {
                     public void onClick(View v) {
                         eventMsg.setText(R.string.on_btn_suc);
-                        eventMsg.setTextSize(18f);
+                        Log.d(TAG, "Button click detected!");
                     }
                 }
         );
@@ -47,7 +50,8 @@ public class MainActivity extends AppCompatActivity {
 
         // Message shown on button click
         eventMsg = new TextView(this);
-
+        eventMsg.setText("");
+        appTitle.setTextSize(24f);
         // Set IDs for widgets
         redButton.setId(1);
         appTitle.setId(2);
@@ -79,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
         // EventMsg should be below button, symmetrical to appTitle
         eventMsgDetails.addRule(RelativeLayout.BELOW, redButton.getId());
         eventMsgDetails.addRule(RelativeLayout.CENTER_HORIZONTAL);
-        eventMsgDetails.setMargins(250,0,0,0);
+        eventMsgDetails.setMargins(0,150,0,0);
 
         sameensLayout.addView(redButton, redButtonDetails);
         sameensLayout.addView(appTitle, appTitleDetails);
