@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Material App Bar</string>
+    <string name="app_desc">This app demonstrates a material design toolbar on an app bar
+    using SDK level 16.</string>
+    <string name="action_info">About</string>
+    <string name="action_settings">Settings</string>
+</resources>
