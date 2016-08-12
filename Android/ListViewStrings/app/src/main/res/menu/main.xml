@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:support="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!--
+        Here we create an item, setting support:showAsAction to display the item as an action if
+        there's room on the compatible Action Bar.
+    -->
+    <item
+        android:id="@+id/menu_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="@string/menu_search"
+        support:showAsAction="always"
+        android:actionViewClass="android.widget.SearchView"/>
+
+    <!--
+        Here we set the settings item to always be in the overflow menu, by setting
+        support:showAsAction to never, so it is never displayed as an action item on the compatible
+        Action Bar.
+    -->
+    <item
+        android:id="@+id/menu_settings"
+        android:icon="@android:drawable/ic_menu_more"
+        android:title="@string/menu_more"
+        support:showAsAction="ifRoom"/>
+
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"/>
+
+</menu>
