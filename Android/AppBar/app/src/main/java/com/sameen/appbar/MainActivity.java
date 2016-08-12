@@ -7,6 +7,10 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+/*
+ * Source: http://stackoverflow.com/questions/31231609/creating-a-button-in-android-toolbar
+ * Date: 12/08/2016
+ */
 
 public class MainActivity extends ActionBarActivity {
 
