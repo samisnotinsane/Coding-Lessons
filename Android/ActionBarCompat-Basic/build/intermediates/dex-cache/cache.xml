@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/sameenislam/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.3.0/support-annotations-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="/Users/sameenislam/Documents/Repositories/Coding-Lessons/Android/ActionBarCompat-Basic/Application/build/intermediates/pre-dexed/debug/support-annotations-23.3.0_1e91e67791d180e661b7c395af048f739bb8dd6a.jar" />
+    </item>
+    <item
+        jar="/Users/sameenislam/Documents/Repositories/Coding-Lessons/Android/ActionBarCompat-Basic/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.2/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="7ae2d38807a43b2f2185ff4089a92c790b579e54">
+        <dex dex="/Users/sameenislam/Documents/Repositories/Coding-Lessons/Android/ActionBarCompat-Basic/Application/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-21.0.2_d26827f7c6c159023f8c62e9a9705f23686f9605.jar" />
+    </item>
+    <item
+        jar="/Users/sameenislam/Documents/Repositories/Coding-Lessons/Android/ActionBarCompat-Basic/Application/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/jars/libs/internal_impl-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="/Users/sameenislam/Documents/Repositories/Coding-Lessons/Android/ActionBarCompat-Basic/Application/build/intermediates/pre-dexed/debug/internal_impl-23.3.0_963cd463302542870c7776d7c261f9815c9ff1b6.jar" />
+    </item>
+    <item
+        jar="/Users/sameenislam/Documents/Repositories/Coding-Lessons/Android/ActionBarCompat-Basic/Application/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="d92184dfa3fb48bed71339b2adc82fa0f2a73e13">
+        <dex dex="/Users/sameenislam/Documents/Repositories/Coding-Lessons/Android/ActionBarCompat-Basic/Application/build/intermediates/pre-dexed/debug/instant-run_5d67e033d32b04838f54008f72004c3eefe82ad5.jar" />
+    </item>
+    <item
+        jar="/Users/sameenislam/Documents/Repositories/Coding-Lessons/Android/ActionBarCompat-Basic/Application/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="/Users/sameenislam/Documents/Repositories/Coding-Lessons/Android/ActionBarCompat-Basic/Application/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.3.0_4ae27041fcd00bed1827d64b5d4efb6f398c871c.jar" />
+    </item>
+    <item
+        jar="/Users/sameenislam/Documents/Repositories/Coding-Lessons/Android/ActionBarCompat-Basic/Application/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="0fd1b79e4bacb58926ddb497bd8155eb63642d98">
+        <dex dex="/Users/sameenislam/Documents/Repositories/Coding-Lessons/Android/ActionBarCompat-Basic/Application/build/intermediates/pre-dexed/debug/instant-run-bootstrap_aa0e830b72f2aecabfd321d060289bb939abc95e.jar" />
+    </item>
+    <item
+        jar="/Users/sameenislam/Documents/Repositories/Coding-Lessons/Android/ActionBarCompat-Basic/Application/build/intermediates/exploded-aar/com.android.support/gridlayout-v7/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="003ebdacd5f75067b8724f92bd5eefa323d870aa">
+        <dex dex="/Users/sameenislam/Documents/Repositories/Coding-Lessons/Android/ActionBarCompat-Basic/Application/build/intermediates/pre-dexed/debug/com.android.support-gridlayout-v7-23.3.0_574b77edae737f3c1290ef05b5311482fed25cfc.jar" />
+    </item>
+    <item
+        jar="/Users/sameenislam/Documents/Repositories/Coding-Lessons/Android/ActionBarCompat-Basic/Application/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="82ce13fd19cdfde0e392f03c27edeba8d4333648">
+        <dex dex="/Users/sameenislam/Documents/Repositories/Coding-Lessons/Android/ActionBarCompat-Basic/Application/build/intermediates/pre-dexed/debug/com.android.support-cardview-v7-23.3.0_538481dc100a82f5cbd18604e15a4987095c5c04.jar" />
+    </item>
+
+</items>
