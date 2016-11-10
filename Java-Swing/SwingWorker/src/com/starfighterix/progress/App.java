@@ -1,5 +1,6 @@
-package com.starfighterix.code;
+package com.starfighterix.progress;
 
+import com.starfighterix.code.MainFrame;
 
 import javax.swing.*;
 
@@ -8,12 +9,13 @@ import javax.swing.*;
  */
 public class App {
 
+
     public static void main(String[] args) {
         SwingUtilities.invokeLater(new Runnable() {
 
             @Override
             public void run() {
-                new MainFrame("SwingWorker Demo");
+                new com.starfighterix.progress.MainFrame("ProgressBar Demo");
             }
         });
     }
