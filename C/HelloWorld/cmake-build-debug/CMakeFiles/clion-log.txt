@@ -1,0 +1,4 @@
+"/Users/sameenislam/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/163.15188.10/CLion.app/Contents/bin/cmake/bin/cmake" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/sameenislam/Documents/Repositories/Coding-Lessons/C/HelloWorld
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/sameenislam/Documents/Repositories/Coding-Lessons/C/HelloWorld/cmake-build-debug

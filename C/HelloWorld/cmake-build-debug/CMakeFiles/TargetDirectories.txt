@@ -1,0 +1,3 @@
+/Users/sameenislam/Documents/Repositories/Coding-Lessons/C/HelloWorld/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/sameenislam/Documents/Repositories/Coding-Lessons/C/HelloWorld/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/sameenislam/Documents/Repositories/Coding-Lessons/C/HelloWorld/cmake-build-debug/CMakeFiles/HelloWorld.dir
